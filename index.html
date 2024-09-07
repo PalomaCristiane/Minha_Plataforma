@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidato Certo</title>
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Candidato Certo</h1>
+        <nav>
+            <ul>
+                <li><a href="#preparacao">Preparação</a></li>
+                <li><a href="#candidato">Área do Candidato</a></li>
+                <li><a href="#empregador">Área do Empregador</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Encontre o emprego dos seus sonhos</h2>
+        <p>Conectamos candidatos e empregadores de forma rápida e eficiente.</p>
+        <button onclick="scrollToSection('sobre')">Saiba Mais</button>
+    </section>
+
+    <section id="preparacao">
+        <h2>Como se preparar para uma vaga de emprego</h2>
+        <p>Aqui você encontrará dicas e recursos para se preparar para entrevistas e melhorar seu currículo.</p>
+        <section>
+            <h2>Como se preparar para uma vaga de emprego</h2>
+            <article>
+                <h3>Como Encontrar um Emprego</h3>
+                <p>Encontrar um emprego pode ser desafiador, mas com as estratégias certas, você pode aumentar suas chances de sucesso:</p>
+                <ul>
+                    <li><strong>Networking:</strong> Construa e mantenha uma rede de contatos profissionais.</li>
+                    <li><strong>Plataforma de Emprego:</strong> Utilize nosso site para atualizar seu cadastro e aumentar sua chances no mercado de trabalho.</li>
+                    <li><strong>Currículo e Carta de Apresentação:</strong> Mantenha seu currículo atualizado e personalize suas cartas de apresentação para cada vaga.</li>
+                    <li><strong>Agências de Recrutamento:</strong> Considere se inscrever em agências de recrutamento que possam ajudar a encontrar oportunidades adequadas.</li>
+                </ul>
+            </article>
+    
+            <article>
+                <h3>Informações Atuais do Mercado Profissional</h3>
+                <p>O mercado de trabalho está em constante evolução. Aqui estão algumas tendências atuais:</p>
+                <ul>
+                    <li><strong>Habilidades em Alta:</strong> Gestão, análise de dados, e habilidades em tecnologia são altamente demandadas[^1^][5].</li>
+                    <li><strong>Trabalho Remoto:</strong> Muitas empresas estão adotando modelos híbridos ou totalmente remotos[^2^][6].</li>
+                    <li><strong>Educação Contínua:</strong> Investir em cursos e certificações pode aumentar sua empregabilidade[^2^][6].</li>
+                </ul>
+            </article>
+    
+            <article>
+                <h3>Como se Qualificar para Vagas</h3>
+                <p>Para se destacar no mercado de trabalho, é importante investir em qualificação profissional:</p>
+                <ul>
+                    <li><strong>Entenda as Oportunidades:</strong> Conheça as demandas da sua área e busque se especializar nelas[^3^][7].</li>
+                    <li><strong>Faça Cursos:</strong> Invista em cursos de curta duração, workshops e certificações[^4^][4].</li>
+                    <li><strong>Aprenda Outros Idiomas:</strong> Ser fluente em mais de um idioma pode ser um grande diferencial[^4^][4].</li>
+                    <li><strong>Desenvolva Soft Skills:</strong> Habilidades como comunicação, trabalho em equipe e liderança são muito valorizadas[^3^][7].</li>
+                </ul>
+            </article>
+        </section>
+    </section>
+
+    <section id="candidato">
+        <h2>Área do Candidato</h2>
+        <form id="form-candidato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="experiencia">Experiência Profissional:</label>
+            <textarea id="experiencia" name="experiencia" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="empregador">
+        <h2>Área do Empregador</h2>
+        <form id="form-empregador">
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" name="empresa" required>
+            
+            <label for="email-empresa">Email:</label>
+            <input type="email" id="email-empresa" name="email-empresa" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O Candidato Certo é uma plataforma inovadora que facilita a conexão entre candidatos e empregadores, ajudando ambos a encontrar a melhor correspondência para suas necessidades.</p>
+    </section>
+
+    <section id="funcionalidades">
+        <h2>Funcionalidades</h2>
+        <div class="feature">
+            <h3>Cadastro de Candidatos</h3>
+            <p>Permite que candidatos criem perfis detalhados com suas informações pessoais e profissionais.</p>
+        </div>
+        <div class="feature">
+            <h3>Cadastro de Empregadores</h3>
+            <p>Empregadores podem se cadastrar e acessar currículos de candidatos qualificados.</p>
+        </div>
+        <div class="feature">
+            <h3>Correspondência Inteligente</h3>
+            <p>Nosso algoritmo avançado ajuda a encontrar a melhor correspondência entre candidatos e vagas.</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
